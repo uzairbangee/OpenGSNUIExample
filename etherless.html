@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<html>
+    <head>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.2.2/dist/web3.min.js"></script>
+    <script>
+        window.addEventListener('load', function () {
+            console.log("window.app ", window.app)
+            window.app.initContract().then(function ({contractAddress, network}) {
+            console.log( 'Factiiv contract Address', contractAddress)
+            console.log(`identified network: ${JSON.stringify(network)}`)
+            document.getElementById('capture_button').disabled = false
+            })
+        });
+    </script>
+<title>GSNv2 Test</title>
+
+
+<script src="bundle.js">
+</script>
+
+
+
+</head>
+<body>
+<h2>GSNv2 Test App</h2>
+
+<script>
+// window.app.listenToEvents()
+console.log("window", window)
+</script>
+
+
+<button id="capture_button" disabled onClick="window.app.contractCall()">
+    Mint
+</button>
+
+
+<hr>
+
+</body>
+</html>

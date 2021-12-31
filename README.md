@@ -1,5 +1,8 @@
 # OpenGSNUIExample
 
+Change the ourContract variable on line 15 in etherless.js file with the NovelCollection contract address.
+Change the paymaster variable on line 16 in etherless.js file with the Paymaster contract address.
+
 Install dependencies
 
 ```

@@ -17,3 +17,5 @@ Start the server
 ```
 node app.js
 ```
+
+Here we will be calling the mint function of Our collection contract without paying gas fees and Paymaster will be responsible to pay our gas fees.
